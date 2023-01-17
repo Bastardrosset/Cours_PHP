@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>coder en php</title>
+        <link rel="stylesheet" href="./style3.css">
+    </head>
+    <body>
+        <h1>Langage de programmation <strong id="MAJ">php</strong></h1>
+        <div id="bouton">
+            <a href="./"
+        </div>
+        <div id="presentation">
+            <p><span id="bolder">Présentation du <span id="MAJ">php</span></span>:</p>
+            <p>Le langage <span id="MAJ">php</span> permet de créer des pages web dynamique en passant par un serveur. Pour écrire et lire du <span id="MAJ">php</span>, les programmes <span id="bolder">Apache</span>, <span id="bolder">PHP</span> et <span id="bolder">MySQL</span> sont néccessaires. Il est possible d'obtenir un package de ces programmes en téléchargant <span id="bolder"><span id="MAJ">mamp</span></span>. les pages web contenant du <span id="MAJ">php</span> ont l'extension .php . </p>
+
+        </div id="tabl_syntax">
+            <table>
+                <tr><!--  Entete du tableau  -->
+                    <th id="bolder" class="A">Syntaxe, instructions et conditions</th>
+                    <th id="bolder" class="B">Definition</th>
+                    <th id="bolder" class="C">Exemple</th>
+                </tr>
+                <tr><!-- Eléments du tableau  -->
+                    <td id="bolder">&lt;? php</td>
+                    <td>Balise ouvrante d'une ligne de code php.</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td id="bolder">?&gt;</td>
+                    <td>Balise fermante d'une ligne de code php.</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td id="bolder">echo</td>
+                    <td>Instruction qui permet d'insérer du texte. Entre "" , elle se termine par un <span id="lightsalmon"> ; .</span> L'instruction <span id="MAJ">print</span> est identique mais moins utilisé.</td>
+                    <td><span id="blue">&lt;? php </span><br> <span id="lightsalmon"> echo</span> "ceci est un texte"<br><span id="blue"> ?&gt;</span></td>
+                </tr>
+                <tr>
+                    <td id="bolder">antislash \</td>
+                    <td>Permet d'afficher les "" dans un texte qui ne seront pas considérés comme la fin du code.</td>
+                    <td><span id="blue">&lt;? php </span><br><span id="lightsalmon"> echo</span> "ceci est un texte \"uniquement\" en <span id="MAJ">php</span>"<br> <span id="blue"> ?&gt;</span></td>
+                </tr>
+                <tr>
+                    <td id="bolder">//</td>
+                    <td>Permet d'écrire un commentaire monoligne dans le code.</td>
+                    <td><span id="blue">&lt;? php </span> <span id="lightsalmon">echo</span> " J'apprend le <span id="MAJ">php " </span> // Cette ligne indique se que je fait. //<br>
+                    <span id="blue"> ?&gt;</span></td>
+                </tr>
+                <tr>
+                    <td id="bolder">/* */</td>
+                    <td>Permet d'écrire un commentaire multilignes.</td>
+                    <td><span id="blue">&lt;? php</span> /* Ce commentaire est écrit<br> sur plusieurs lignes */ <br>
+                    <span id="lightsalmon"> echo </span> " j'apprends toujours du  <span id="MAJ">php</span>"<br><span id="blue">?&gt;</span></td>
+                </tr>
+                <tr>
+                    <td id="bolder">$</td>
+                    <td>Permet de définir une variable par un nom ou une valeur. Le type <span id="MAJ">string</span> permet de stocker du texte, <br>le type <span id="MAJ">int</span> permet de stocker des nombres entier, le type <span id="MAJ">float</span> des nombres décimaux et le type <span id="MAJ">bool</span> des valeurs booléens. </td>
+                    <td><span id="blue">&lt;?php </span><br>
+                    <span id="yellow">$age_du_visiteur</span> = 17 <br>
+                    <span id="blue">?&gt;</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="bolder">+</td>
+                    <td>Addition, utilisé pour une opération de calcul dans une variable.</td>
+                    <td><span id="blue">&lt;? php </span><br>
+                    <span id="yellow"> $nombre</span> = 2 <span id="red">+</span> 4 ;<br>
+                    <span id="blue"> ?&gt;</span></td>
+                </tr>
+                <tr>
+                    <td id="bolder">-</td>
+                    <td>Soustraction, utilisé pour une opération de calcul dans une variable.</td>
+                    <td><span id="blue">&lt;? php </span><br>
+                    <span id="yellow"> $nombre</span> = 5 <span id="red">-</span> 1 ;<br>
+                    <span id="blue"> ?&gt;</span></td>
+                </tr>
+                <tr>
+                    <td id="bolder">*</td>
+                    <td>Multiplication, utilisé pour une opération de calcul dans une variable.</td>
+                    <td><span id="blue">&lt;? php </span><br>
+                    <span id="yellow"> $nombre</span> = 2 <span id="red">*</span> 4 ;<br>
+                    <span id="blue"> ?&gt;</span></td>
+                </tr>
+                <tr>
+                    <td id="bolder">/</td>
+                    <td>Division, utilisé pour une opération de calcul dans une variable.</td>
+                    <td><span id="blue">&lt;? php </span><br>
+                    <span id="yellow"> $nombre</span> = 2 <span id="red">/</span> 1 ;<br>
+                    <span id="blue"> ?&gt;</span></td>
+                </tr>
+                <tr>
+                    <td id="bolder">if ( )</td>
+                    <td>Structure de condition qui sera exécuter si elle est remplie.</td>
+                    <td><span id="blue">&lt;? php</span><br>
+                    <span id="red">if </span> (<span id="yellow">$age</span> = 18){ <span id="lightsalmon"> echo </span> "joyeux anniversaire !";}</span></td>
+                </tr>
+                <tr>
+                    <td id="bolder">else { }</td>
+                    <td>Est utilisé pour complèter les conditions d'exécution.</td>
+                    <td><span id="red">else </span> { <span id="lightsalmon">echo</span> "c'est demain ton anniversaire !";} <br><span id="blue">?&gt;</span></td>
+                </tr>
+                <tr>
+                    <td id="bolder">elsif</td>
+                    <td>Permet d'éxecuter une instruction après un "premier if" évaluer comme false. A la différence de else, il n'éxecutera la condition que si elle est évaluer comme true</td>
+                    <td><span id="blue">&lt;? php </span><br>
+                    <span id="red">if </span>(<span id="yellow">$dix</span> &gt; <span id="yellow"> $douze</span>) {<br> <span id="lightsalmon">echo </span>' dix est plus grand que douze ';}<br><span id="red">elsif </span>(<span id="yellow">$dix</span> == <span id="yellow">$douze</span>) {<br>
+                    <span id="lightsalmon">echo </span>' dix est égal à douze ';}<br><span id="red">else </span>{' dix est plus petit que douze ';}<br><span id="blue">?&gt;</span></td>
+                </tr>
+                <tr>
+                    <td id="bolder">break</td>
+                    <td>Instruction qui permet de casse une boucle lorsque la condition est éxecuté.</td>
+                    <td><span id="blue">&lt;? php </span><br><span id="red"> for</span>( <span id="yellow">$x </span> = 0; <span id="yellow"> $x</span> &lt; 10;<span id="yellow"> $x++</span> ) {<br>
+                    <span id="red">if </span>( <span id="yellow">$x </span> == 4 ) {<br><span id="red">break</span> ;}<br> <span id="lightsalmon">echo"</span> Le nombre est: <span id="yellow">$x </span>";}<br><span id="blue">?&gt;</span>
+                    </td>
+                </tr> 
+                <tr>
+                    <td id="bolder">=</td>
+                    <td>Sert à affecter une valeur à une variable.</td>
+                    <td><span id="blue">&lt;? php </span><br>
+                    <span id="yellow">$autorisation_entrer</span><span id="red"> = </span>"oui";</td>
+                </tr>
+                <tr>
+                    <td id="bolder">==</td>
+                    <td>Est égale à. Sert à tester l'égalité, ne pas confondre avec le simple = qui est l'égale "signifie".</td>
+                    <td><span id="red">if </span>(<span id="yellow">$autorisation_entrer</span> <span id="red">==</span> "oui")<br><span id="blue"> ?&gt;</span></td>
+                </tr>
+                <tr>
+                    <td id="bolder">&gt;</td>
+                    <td>Est supérieur à. Valeur strictement superieur à une autre.</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td id="bolder">&lt;</td>
+                    <td>Est inférieur à. Valeur strictement inférieur à une autre.</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td id="bolder">&gt;=</td>
+                    <td>Est supérieur ou égale à.</td>
+                    <td><span id="blue">&lt;? php </span><br> <span id="yellow">$age</span> = 18 ;<br>
+                    <span id="red">if </span>(<span id="yellow">$age</span><span id="red">&gt;=</span>18) { <span id="lightsalmon">echo </span>"bienvenue sur mon site";}<span id="blue"> ?&gt;</span></span></td>
+                </tr>
+                <tr>
+                    <td id="bolder">&lt;=</td>
+                    <td>Est inférieur ou égale à.</td>
+                    <td><span id="blue">&lt;? php </span><br> <span id="yellow">$age</span> = 18 ;<br>
+                    <span id="red">if </span>(<span id="yellow">$age</span><span id="red">&lt;=</span> 18) { <span id="lightsalmon">echo</span> "bienvenue sur mon site";}<span id="blue"> ?&gt;</span></span></td>
+                </tr>
+                <tr>
+                    <td id="bolder">!=</td>
+                    <td>Est différent de.</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td id="bolder">=&gt;</td>
+                    <td>Syntaxe pour dire &lt;&lt;associer&gt;&gt; une coordonnée à une valeur.</td>
+                    <td><span id="blue">&lt;? php</span><br> <span id="yellow">$coordonnes</span> = array ('ville' <span id="red">=&gt; </span>'Marseille');<br> <span id="blue">?&gt;</span></td>
+                </tr>
+                <tr>
+                    <td id="bolder">AND & OR</td>
+                    <td>Permet de concaténer plusieurs variables.</td>
+                    <td><span id="blue">&lt;? php </span><br>
+                    <span id="yellow">$age </span> = 8;<br>
+                    <span id="yellow">$langue</span> = "anglais";<br>
+                    <span id="red">if </span>(<span id="yellow">$age </span><span id="red">&lt;=</span> 12 <span id="blue"><span id="MAJ">and </span></span> <span id="yellow">$langue</span> == "français")<br>
+                    {<span id="lightsalmon"> echo </span>"bienvenue sur mon site";}<br>
+                    <span id="blue"> ?&gt;</span></td>
+                </tr>
+                <tr>
+                    <td id="bolder">switch</td>
+                    <td>Permet d'exécuter une condition dans une variable qui contient de multiples instructions.</td>
+                    <td><span id="blue">&lt;? php</span><br>
+                        <span id="yellow">$note </span>= 10;<br>
+                    <span id="red">switch</span> (<span id="yellow">$note</span>) { <span id="red">case </span>0: <span id="yellow">echo </span>"Tu es vraiment un gros nul"; <span id="red">break</span>;<br><span id="red">case </span>20:<span id="yellow">echo </span>"Tu es un super crack";}<span id="blue">?&gt;</span></td>
+                </tr>
+                <tr>
+                    <td id="bolder">while</td>
+                    <td>Utilisé pour une instruction de boucle dans laquelle une variable sera testé et exécuté. Méthode la plus simple et flexible.</td>
+                    <td><span id="blue">&lt;? php</span><br> <span id="red">while </span>(<span id="yellow">$boucle_continue</span><span id="red"> == </span><span id="violet">true</span>); <br>{ //l'instruction est exécuté à l'infini sans condition de sortie //}<span id="blue"> ?&gt;</span></td>
+                </tr>
+                <tr>
+                    <td id="bolder">for</td>
+                    <td>Utilisé pour une instruction de boucle. il est possible de concaténer initialisation, conditions et incrémenter la boucle dans la même parenthèse.</td>
+                    <td><span id="blue">&lt;? php</span><br>
+                    <span id="red">for </span>(<span id="yellow">$nombre_de_lignes</span> <span id="red"> = </span>1. <span id="yellow">$nombre_de_lignes</span> &lt;= 100; <span id="yellow">$nombre_de_lignes</span> <span id="red"> ++ </span>)<br>
+                    { <span id="lightsalmon">echo</span> 'ceci est la ligne n° .<span id="yellow">$nombre_de_lignes</span>;} <span id="blue">?&gt;</span></td>
+                </tr>
+                <tr>
+                    <td id="bolder">array</td>
+                    <td>Fonction qui permet de créer un tableau. Dans l'exemple suivant, un numéro commencent de 0 sera attribué cronologiquement à chaque prénoms.</td>
+                    <td><span id="blue">&lt;? php</span> <br>
+                    <span id="yellow">$prenom</span> = <span id="red">array </span>('Francois', 'Jean', 'matéo', 'simon', 'léonard');<br>
+                     <span id="blue">?&gt;</span></td>
+                </tr>
+                <tr>
+                    <td id="bolder">foreach</td>
+                    <td> Cette fonction de boucle utilisé uniquement pour les tableaux va passer en revue chaque ligne et mettre la valeur dans une variable temporaire.<br>
+                    Il est possible de récupérer la clé de l'élément en cours d'analyse en lui attribuant également une variable.</td>
+                    <td><span id="blue">&lt;? php</span><br> <span id="yellow">$prenoms</span> = <span id="red">array</span> ('Francois', 'Jean', 'matéo', 'simon', 'léonard');<br>
+                    <span id="red">foreach</span>(<span id="yellow">$prenom</span> as <span id="yellow">$element</span>)<br>
+                    { <span id="lightsalmon">echo</span><span id="yellow"> $element</span> ;} <span id="blue"> ?&gt;</span><br>
+                    // récupérer la clé de l'élément //<br>
+                    <span id="blue">&lt;? php</span> <span id="red">foreach</span>(<span id="yellow">$coordonnees</span> as <span id="yellow">$cle</span> =&gt; <span id="yellow">$element</span>) <span id="blue">?&gt;</span></td>
+                </tr>
+                <tr>
+                    <td id="bolder">print_r</td>
+                    <td>Fonction utilisé pour savoir se que contient un tableau.<br>
+                    S'utilise avec la balise &lt;/pre&gt; (<span id="MAJ">html</span>) pour avoir un affichage correct. Est utilisé par les developpeurs lors de la création de programmes pour savoir rapidement se que contient un array.</td>
+                    <td><span id="blue">&lt;? php</span> <br> <span id="yellow">$coordonnees</span> = <span id="red">array</span> ( // contenu dans le tableau // )<br> <span id="lightsalmon">print_r</span> (<span id="yellow">$coordonnees</span>); <br> <span id="lightsalmon">echo</span> '&lt;/pre&gt;' ; <span id="blue">?&gt;</span></td>
+                </tr>
+                <tr>
+                    <td id="bolder">array_key_exists</td>
+                    <td>Fonction utilisé lorsque l'on cherche dans un tableau si une clé existe. La fonction va parcourir le tableau et repondre par une valeur booléen ( false ou true ).<br>
+                    <a href="https://www.php.net/manual/fr/book.array.php" target="_blank">Lien</a> vers la documentation <span id="MAJ">php</span> des fonctions tableau existantes.</td>
+                    <td><span id="blue">&lt;? php</span><br> <span id="skyblue">array_key_exists</span>('cle', <span id="yellow">$array</span>);<br>
+                    <span id="yellow">$coordonnees</span> = <span id="red">array</span> (// données dans le tableau //)<br>
+                    <span id="red">if</span> (<span id="skyblue">array_key_exists </span>('clé', <span id="yellow">$coordonnees</span>))<br>
+                    { <span id="lightsalmon">echo </span>'la clé "clé" se trouve dans les coordonnées';}  <span id="blue">?&gt;</span></td>
+                </tr>
+                <tr>
+                    <td id="bolder">in_array</td>
+                    <td>Même principe que "array_key_exists" mais cette fois la fonction va chercher si une valeur se trouve dans le contenu du tableau et repondre par une booléen. </td>
+                    <td><span id="blue">&lt;? php</span><br> <span id="yellow">$prenom</span> = <span id="red">array</span> ('// liste de prénoms //);<br>
+                    <span id="red">if</span> (<span id="skyblue">in_array</span>('léonard', <span id="yellow">$prenom</span>))<br>
+                    {<span id="lightsalmon">echo </span>' la valeur "léonard" se trouve dans le tableau ';} <span id="blue">?&gt;</span></td>
+                </tr>
+                <tr>
+                    <td id="bolder">array_search</td>
+                    <td>Même principe que "in_array", la fonction cible et renvoie le numéro de la clé d'une valeur dans l'array ou son nom s'il s'agit d'un tableau associatif. </td>
+                    <td><span id="blue">&lt;? php</span><br> <span id="yellow">$fruits</span> = <span id="red">array</span> ('banane, pomme, poire'); <br>
+                    <span id="yellow">$position </span>= <span id="skyblue">array_search </span>('pomme',<span id="yellow">$fruits</span>);<br> <span id="lightsalmon">echo </span>'"pomme" se trouve en <span id="yellow">$position</span></td>
+                </tr>
+                <tr>
+                    <td id="bolder">strlen</td>
+                    <td>Permet de retourner le nombre de caractères d'une suite de mots.<br> Voir au bas du tableau le lien vers les "fonctions prêtes à l'emploi". </td>
+                    <td><span id="blue">&lt;? php</span><br>
+                    <span id="yellow">$phrase</span> 'cette phrase comporte 37 caractères!';<br><span id="yellow">$caracteres</span> = <span id="skyblue">strlen</span>(<span id="yellow">$phrase</span>);<br><span id="lightsalmon">echo </span>'la phrase de cette exemple comporte '.<span id="yellow">$caracteres</span>;' caracteres : <span id="yellow">$phrase</span>; <br>
+                    <span id="blue">?&gt;</span></td>
+                </tr>
+                <tr>
+                    <td id="bolder">date</td>
+                    <td>permet de renvoyer la date et l'heure grace aux fonctions H(heure), i(minute), d(jour), m(mois), Y(année).</td>
+                    <td><span id="blue">&lt;? php</span><br>
+                    <span id="yellow">$annee </span>= <span id="skyblue">date</span>('Y');<br><span id="yellow">$mois </span></span>= <span id="skyblue">date</span>('m');<br><span id="yellow">$jour </span></span>= <span id="skyblue">date</span>('d');<br>
+                    <span id="lightsalmon">echo </span>'Bonjour nous somme le' .<span id="yellow">$jour</span>.'/'.<span id="yellow">$mois</span>.'/'.<span id="yellow">$annee</span>.'/';<br>
+                    <span id="blue">?&gt;</span></td>
+                </tr>
+                <tr>
+                    <td id="bolder">fonction</td>
+                    <td>Permet de créer une fonction. Note que la ligne "fonction" ne se termine pas par un ";" puisque c'est le début d'une chaine d'instruction.</td>
+                    <td><span id="blue">&lt;? php</span><br> <span id="red">fonction</span> dire bonjour(<span id="yellow">$pseudo</span>)<br> { <span id="lightsalmon">echo </span>'Bonjour' .<span id="yellow">$pseudo</span>. '!';}<br>
+                        <span id="blue">?&gt;</span></td>
+                </tr>
+                <tr>
+                    <td id="bolder">include</td>
+                    <td>Dans une structure, permet d'insérer des portions de pages qui ont une extension <span id="MAJ">php</span> à une autre page.</td>
+                    <td><span id="blue">&lt;? php</span><br> <span id="skyblue">include </span>('header.php');<br>
+                    <span id="skyblue">include </span>('footer.php');<br>
+                    <span id="blue">?&gt;</span></td>
+                </tr>
+                <tr>
+                    <td id="bolder">isset</td>
+                    <td>Instruction utilisé dans une condition. Permet de retrouver si des valeurs existent sont stockés</td>
+                    <td><span id="blue">&lt;? php</span><br>
+                    <span id="red">if </span> (<span id="skyblue">isset</span>(<span id="yellow">$_GET</span>['pseudo']))<br>
+                    <span id="lightsalmon">echo </span>'Bonjour' .<span id="yellow">[$_GET</span>['pseudo']. ;<br><span id="blue">?&gt;</span</td>
+                </tr>
+                <tr>
+                    <td id="bolder">post</td>
+                    <td>Method qui permet d'appeler les donnés d'un formulaire. </td>
+                    <td>&lt;form method="<span id="red">POST</span>" action=""&gt;</td>
+                </tr>
+                <tr>
+                    <td id="bolder">htmlspecialchars</td>
+                    <td>Fonction qui permet de proteger l'input d'utilisateur malveillant.</td>
+                    <td><span id="blue">&lt;? php</span><br>
+                    <span id="lightsalmon">echo</span> <span id="skyblue">htmlspecialchars</span>(<span id="yellow">$_POST</span>['prenom']);<br>
+                    <span id="blue">?&gt;</span></td>
+                </tr>
+                <tr>
+                    <td id="bolder"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <div id="fonctions">
+                <h2>Les fonctions en <span id="MAJ">php</span>:</h2>
+                    <p>Il existe une multitude de fonctions prêtes à l'emploi pour traiter toutes sortes de besoins sur le site officiel de documentation <a href="https://www.php.net/manual/fr/funcref.php" target="_blank"><span id="MAJ">php</span></a>. </p>
+            </div>
+                <h2>Les variables superglobales:</h2>
+            <div id="tabl_surperglobales">
+                <table>
+                    <tr><!--  Entete du tableau des variables superglobales -->
+                        <th id="bolder" class="D">Variables superglobales</th>
+                        <th id="bolder" class="E">Definition</th>
+                        <th id="bolder" class="F">Exemple</th>
+                    </tr>
+                    <tr><!-- Elements du tableau des variables superglobales -->
+                        <td id="bolder">$_GET</td>
+                        <td>Variable superglobales qui détermine un array (tableau associatif) dans lequel son stocké les valeurs qui transitent par l'<span id="MAJ">url</span>.<a href="https://www.php.net/manual/fr/reserved.variables.get.php" target="blank">Lien </a>vers la documentation <span id="MAJ">php</span>.</td>
+                        <td><span id="blue">&lt;? php</span><br>
+                        <span id="lightsalmon">echo </span>'Bonjour' . <span id="skyblue">htmlspecialchars</span>(<span id="yellow">$_GET</span>["pseudo"]) .'!' ;<br>
+                        <span id="blue">?&gt</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="bolder">$_POST</td>
+                        <td>Contient les informations envoyés par un formulaire. </td>
+                        <td><span id="blue">&lt;? php</span><br>
+                            <span id="lightsalmon">echo </span>'Bonjour' . <span id="skyblue">htmlspecialchars</span>(<span id="yellow">$_POST</span>["pseudo"]) .'!' ;<br>
+                            <span id="blue">?&gt</span></td>
+                    </tr>
+                    <tr>
+                        <td id="bolder">$_SERVER</td>
+                        <td>Variable de serveur et d'éxecution. Se sont les valeurs renvoyés par le serveur. <a href="https://www.php.net/manual/fr/reserved.variables.server.php" target="_blank">Lien </a>vers la documentation <span id="MAJ">php</span> contenant toutes variables en relation avec le serveur.</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td id="bolder">$_SESSION</td>
+                        <td>Permet de créer plusieurs variables qui restent stockées sur le serveur le temps de la présence d'un visiteur. Il faut appeler "session_start()" avant le code <span id="MAJ">html</span> pour pouvoir accéder aux variables superglobales. <a href="https://www.php.net/manual/fr/ref.session.php" target="blank">Lien </a>vers la documenation <span id="MAJ">php </span> de toutes les fonctions de Session.</td>
+                        <td><span id="blue">&lt;? php</span><br>
+                         <span id="skyblue">session_start</span>();<br>
+                         /*la session est démarrée si vous n'écrivez pas cette ligne, vous ne pouvez pas utiliser la variable globale $_Session*/<br>
+                         <span id="yellow">$_SESSION</span> ["newsession"] = <span id="yellow">$value</span> ;<br><span id="blue">?&gt;</span>
+                        <br>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="bolder">$_COOKIE</td>
+                        <td>Contient les valeurs des cookies enregistrés sur l'ordinateur du visiteur. Cela nous permet de stocker des informations sur l'ordinateur du visiteur pendant plusieurs mois, pour se souvenir de son nom, par exemple. Une fois que les cookies ont été placés, ils seront accessible lors du prochain chargement de page dans le tableau $_COOKIE. Tout comme "session_start", "set_cookie" doit être placé en haut de page avant tout code <span id="MAJ">html</span>. <a href="https://www.php.net/manual/fr/reserved.variables.cookies.php" target="_blank">Lien</a> vers la documentation <span id="MAJ">php</span>.</td>
+                        <td><span id="blue">&lt;? php</span><br>
+                        <span id="skyblue">setcookie </span>('pseudo', 'Xavier', <span id="skyblue">time</span>() + <span id="violet">365<span id="red"> + </span><span id="violet">24</span><span id="red"> + </span><span id="violet">3600</span>); <br>
+                        <span id="blue">?&gt;</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="bolder">$_FILES</td>
+                        <td>Variable de téléchargement de fichier via <span id="MAJ">http</span>. Contient la liste des fichiers qui ont été envoyés via un formulaire. <a href="https://www.php.net/manual/fr/features.file-upload.php" target="_blank"> Lien </a>vers la documentation <span id="MAJ">php</span> conscernant la gestion des téléchargements de fichiers.</td>
+                        <td></td>
+                    </tr>
+                    
+                </table>
+            </div>
+                <h2>Base de données My<span id="MAJ">sql</span>:</h2>
+            <div id="MySQL">
+                <p>Afin de conserver et stocker de manière organisée les données écritent en <span id="MAJ">php</span>, il va falloir les enregistrer dans une <strong>base de données</strong> (<span id="MAJ">bdd</span>). La Base de données va permettre de classer les informations. Imaginons la structure d'une base de données comme un tableau appelé la "<span id="bolder">base</span>" dans lequel l'entête serai appelés  <span id="bolder">une table</span> ou les données seraient enregistrés dans des colonnes appelé <span id="bolder">des champs</span> et les lignes <span id="bolder">des entrées</span>. Grace au langage <span id="MAJ">sql</span> on cummunique avec My<span id="MAJ">sql</span>. Ce langage est commun à tous systèmes de gestion de base de données.<br>
+                Avec <strong>phpMyAdmin</strong>, </p>
+            </div>
+    </body>
+</html>

@@ -1,0 +1,97 @@
+h1 {
+  font-size: 2.8rem;
+  text-align: center;
+}
+#presentation,
+#fonctions,
+#MySQL {
+  width: 95%;
+  height: 100px;
+  border: 1px solid black;
+  margin-bottom: 20px;
+  padding-left: 5px;
+  border-radius: 5px;
+  box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+}
+#fonctions {
+  margin-top: 40px;
+}
+a {
+  text-decoration: none;
+  font-weight: bolder;
+}
+/* *********** CARACTERE GRAS POUR LES ELEMENTS D'IMPORTANCE */
+#bolder {
+  text-align: center;
+  font-weight: bolder;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#MAJ {
+  text-transform: uppercase;
+}
+/* ********* CARACTERE EN blue POUR LES ELEMENTS EN SPAN ID blue ******* */
+#blue {
+  color: blue;
+}
+/* ****** CARACTERE EN skyblue POUR LES ELEMENTS SPAN ID bleu skyblue ******* */
+#skyblue {
+  color: rgb(3, 115, 160);
+}
+/* ********* CARACTERE EN lightgsalmon POUR LES ELEMENTS EN SPAN ID lightsalmon ******* */
+#lightsalmon {
+  color: lightsalmon;
+}
+/* ********* CARACTERE EN yellow POUR LES ELEMENTS EN SPAN ID yellow ******* */
+#yellow {
+  color: rgb(129, 165, 0);
+}
+/* ******** CARACTERE EN red POUR LES ELEMENTS EN SPAN red ******* */
+#red {
+  color: maroon;
+}
+/* ******* CARACTERE violet POUR LES ELEMENTS SPAN BOOLEENS violet******* */
+#violet {
+  color: rgb(97, 0, 97);
+}
+/* ***** BOLDER POUR LES CARACTERES EN GRAS ***** */
+#bolder {
+  font-weight: bolder;
+}
+/* ****** BORDURES ET ESPACEMENTS DES TABLEAUX ****** */
+#tabl_syntax,
+#tabl_surperglobales {
+  width: 100%;
+}
+table {
+  border-collapse: collapse;
+  backdrop-filter: blur(5px);
+}
+th {
+  border: 2px solid black;
+  font-size: 1.2rem;
+  padding: 10px 10px 10px 10px;
+}
+.A,
+.C {
+  width: 20%;
+}
+.B {
+  width: 40%;
+}
+.D {
+  width: 10%;
+}
+.E {
+  width: 40%;
+}
+.F {
+  width: 30%;
+}
+
+td {
+  padding: 5px 5px 5px 5px;
+  border: 2px solid black;
+}
